@@ -80,7 +80,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("your-redis-host.upstash.io", 6379)],
+            "hosts": [("https://connecthub-1-wlgr.onrender.com", 6379)],
         },
     },
 }
