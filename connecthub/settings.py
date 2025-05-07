@@ -80,7 +80,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("https://connecthub-1-wlgr.onrender.com", 6379)],
+            "hosts": [os.environ.get("REDIS_URL")],
         },
     },
 }
